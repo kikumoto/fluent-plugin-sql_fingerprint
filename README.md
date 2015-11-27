@@ -1,5 +1,7 @@
 # fluent-plugin-sql_fingerprint
 
+[![Build Status](https://travis-ci.org/kikumoto/fluent-plugin-sql_fingerprint.svg?branch=master)](https://travis-ci.org/kikumoto/fluent-plugin-sql_fingerprint)
+
 A Fluent filter plugin to convert sql to sql's fingerprint.
 
 ## Requirements
