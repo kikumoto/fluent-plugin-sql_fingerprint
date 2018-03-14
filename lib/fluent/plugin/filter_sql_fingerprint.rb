@@ -1,13 +1,9 @@
+require "open3"
 require 'fluent/plugin/filter'
 
 module Fluent::Plugin
   class SqlFingerprintFilter < Fluent::Plugin::Filter
     Fluent::Plugin.register_filter('sql_fingerprint', self)
-
-    def initialize
-      super
-      require "open3"
-    end
 
     config_param :fingerprint_tool_path, :string
     config_param :target_key, :string, :default => 'sql'
