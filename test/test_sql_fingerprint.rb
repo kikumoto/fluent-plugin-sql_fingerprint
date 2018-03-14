@@ -10,11 +10,11 @@ class SqlFingerprintFilterTest < Test::Unit::TestCase
   end
 
   def create_driver(conf = '')
-    Test::FilterTestDriver.new(SqlFingerprintFilter).configure(conf, true)
+    Test::Driver::Filter.new(Plugin::SqlFingerprintFilter).configure(conf)
   end
 
   def filter(d, msg)
-    d.run { d.filter(msg, @time) }
+    d.run { d.feed('test', @time, msg) }
     d.filtered
   end
 

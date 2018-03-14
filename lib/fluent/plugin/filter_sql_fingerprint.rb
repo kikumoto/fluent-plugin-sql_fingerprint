@@ -1,6 +1,8 @@
-module Fluent
-  class SqlFingerprintFilter < Filter
-    Plugin.register_filter('sql_fingerprint', self)
+require 'fluent/plugin/filter'
+
+module Fluent::Plugin
+  class SqlFingerprintFilter < Fluent::Plugin::Filter
+    Fluent::Plugin.register_filter('sql_fingerprint', self)
 
     def initialize
       super
