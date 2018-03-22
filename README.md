@@ -6,7 +6,7 @@ A Fluent filter plugin to convert sql to sql's fingerprint.
 
 ## Requirements
 
-Fluentd >= v0.12
+Fluentd >= v0.14
 
 ## Install
 

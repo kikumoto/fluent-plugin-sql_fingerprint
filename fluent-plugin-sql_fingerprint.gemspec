@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-sql_fingerprint"
-  spec.version       = "0.0.1"
+  spec.version       = "0.1.0"
   spec.authors       = ["Takahiro Kikumoto"]
   spec.email         = ["kikumoto.takahiro@hamee.co.jp"]
 
